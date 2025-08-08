@@ -1,0 +1,12 @@
+{
+  "name": "ebay-nodejs",
+  "version": "1.0.0",
+  "description": "Replicating the style of the Ebay website and some of it's functionalities from zero, to learn different tools with react , nodejs and expressjs.",
+  "license": "ISC",
+  "author": "diego m.o",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
