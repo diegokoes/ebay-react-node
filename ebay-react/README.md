@@ -1,12 +1,12 @@
-# React + Vite
+# Ebay React (learning project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Before diving into the project itself of replicating design and functionality of the ebay website in react I looked at a repository [bulletproof react](https://github.com/alan2207/bulletproof-react) because I wanted to follow a different structure than that we saw in class.
 
-Currently, two official plugins are available:
+Without copying and pasting what the project stablishes as solid guidelines/recommendations for react projects, this is the gist of it:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Shared → Features → App (one-way flow)
+- Shared: reusable, domain-agnostic building blocks (components, hooks, lib, utils, types)
+- Features: domain-specific slices (auth, listings, cart, checkout, payments, messaging)
+- App: composition layer (routing, providers, app shell)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`Does it make sense to create such a structure for a 'simple' project` -> for me, yes. I understand much better how an app works when everything is modularized and follows an structure. I struggle understanding a library/framework without a point of reference of best/practices and examples, and then after that I am much better at adapting to other structures.
